@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Chores ToDo List Andri React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chores ToDo List create by using :
+ - [ReactJS](https://react.dev/)
+ - [Chakra-UI](https://chakra-ui.com/)
 
 ## Available Scripts
 
