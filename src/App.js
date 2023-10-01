@@ -12,28 +12,32 @@ function App() {
   const [input, setInput] = useState("");
   const [list, setList] = useState([]);
   
+  // input list
   const handleChange = (e) => {
     setInput(e.target.value)
   }
 
+  // buttonn add list
   const addTodo = (e) => {
       e.preventDefault()
       setList([...list, {text:input, complete: false}])
       setInput("");
   };
 
+  // button delete list
   const deleteTodo = (text) => {
     const newList = [...list]
     newList.splice(text, 1)
     setList(newList);
   };
 
-const handleCheckbox = (index) => {
-  const newTasks = [...list];
-  newTasks[index].completed = !newTasks[index].completed;
-  setList(newTasks);
-};
-const completedTasks = list.filter((task) => task.completed);
+  // count checkbox
+  const handleCheckbox = (index) => {
+    const newInput = [...list];
+    newInput[index].completed = !newInput[index].completed;
+    setList(newInput);
+  };
+  const completedTasks = list.filter((task) => task.completed);
 
   
   return (
